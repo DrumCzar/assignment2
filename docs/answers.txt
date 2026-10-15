@@ -1,0 +1,82 @@
+Git Assignment 2
+
+Git Lab Tutorials Completion Date: 10/15/2026
+GitHub Account Creation Date:Approximately 2022 
+
+QUESTION 1: Paste the console output saved after pushing docs/status.txt.
+
+Answer:
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 32 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 435 bytes | 435.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/DrumCzar/assignment2.git
+   53c6236..de376a0  master -> master
+
+QUESTION 2: How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used.
+
+Answer:
+The repository contains 9 commits so far, including the commits made by the original contributors and my own commits.
+
+Command used:
+git rev-list --count HEAD
+
+QUESTION 3: When was the README.md file modified last? Write the git command you used.
+
+Answer:
+The README.md file was last modified in a commit dated 2026-10-15 10:17:23 -0500
+
+Command used:
+git log -1 --format="%ad" --date=iso -- README.md
+
+QUESTION 4: Mention two reasons why branches are used in a Git repository.
+
+Answer:
+1. Branches allow developers to work on new features or fix bugs without affecting the main branch of the project.
+2. Branches allow multiple developers to work on different parts of a project at the same time and later merge their changes into the main branch.
+
+QUESTION 5: What is the difference between git log and git status?
+
+Answer:
+The git log command displays the commit history of a repository, including previous commits, their authors, dates, and commit messages.
+
+The git status command shows the current state of the working directory and staging area. It tells the user which files have been modified, staged, or are untracked.
+
+QUESTION 6: What command would you use to see the commits where Vehicle.h was one of the committed files?
+
+Answer:
+git log -- Vehicle.h
+
+QUESTION 7: What command would you use to see the commits whose commit message contains the word "file"?
+
+Answer:
+git log --grep="file" -i
+
+QUESTION 8: In the context of object-oriented programming, what are inheritance, polymorphism, and encapsulation?
+
+I. Inheritance
+
+Inheritance is an object-oriented programming concept that allows one class to inherit attributes and methods from another class. The class being inherited from is called the base class, while the class that inherits is called the derived class. Inheritance promotes code reuse and helps organize related classes.
+
+II. Polymorphism
+
+Polymorphism is an object-oriented programming concept that allows objects of different classes to be used through the same interface while performing different actions. In C++, polymorphism can be achieved through virtual functions and method overriding.
+
+III. Encapsulation
+
+Encapsulation is an object-oriented programming concept that combines data and methods into a single class while restricting direct access to certain internal details. It helps protect data and maintain control over how information is accessed or modified. In C++, encapsulation is implemented using access modifiers such as private, protected, and public.
+
+QUESTION 9: What is the main difference between the Dictator and Lieutenants workflow and the Integration Manager workflow?
+
+Answer:
+The main difference between the Dictator and Lieutenants workflow and the Integration Manager workflow is how the responsibility for reviewing and integrating code is organized.
+
+QUESTION 10: How would a team of 100 developers benefit from following the Dictator and Lieutenants workflow instead of the Centralized workflow?
+
+Answer:
+A team of 100 developers would benefit from the Dictator and Lieutenants workflow because it allows responsibilities to be distributed among multiple project leaders instead of relying on a single centralized integration process.
+
